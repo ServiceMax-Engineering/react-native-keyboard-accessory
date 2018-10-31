@@ -157,7 +157,6 @@ class KeyboardAccessoryView extends Component {
     const applySafeArea = isSafeAreaSupported && inSafeAreaView;
 
     return (
-      <View style={{ height: (isKeyboardVisible || alwaysVisible ? visibleHeight  : 0) }}>
         <View style={[
           styles.accessory,
           !hideBorder && styles.accessoryBorder,
@@ -172,7 +171,6 @@ class KeyboardAccessoryView extends Component {
             { this.props.children }
           </View>
         </View>
-      </View>
     );
   }
 }
